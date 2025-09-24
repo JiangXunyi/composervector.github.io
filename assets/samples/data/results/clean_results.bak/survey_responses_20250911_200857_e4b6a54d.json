@@ -1,0 +1,600 @@
+{
+  "background_info": {
+    "timestamp": "2025-09-11T20:03:39.650766",
+    "music_training": "Less than 1 year",
+    "composer_knowledge": "I know these names but don't understand their musical styles"
+  },
+  "session_metadata": {
+    "random_seed": "e4b6a54d",
+    "trial_order": [
+      "task1_group1_original",
+      "task1_group2_original",
+      "task1_group3_original",
+      "task1_group3_sample1",
+      "task1_group1_sample1",
+      "task1_group2_sample1",
+      "task2_group3_sample1",
+      "task2_group2_sample1",
+      "task2_group1_sample1",
+      "task2_group1_original",
+      "task2_group3_original",
+      "task2_group2_original",
+      "task3_group2_original",
+      "task3_group2_sample1",
+      "task3_group3_sample1",
+      "task3_group3_original",
+      "task3_group1_sample1",
+      "task3_group1_original"
+    ],
+    "slider_orders": {
+      "0": [
+        "bach",
+        "mozart"
+      ],
+      "1": [
+        "mozart",
+        "beethoven"
+      ],
+      "2": [
+        "mozart",
+        "chopin"
+      ],
+      "3": [
+        "mozart",
+        "chopin"
+      ],
+      "4": [
+        "bach",
+        "mozart"
+      ],
+      "5": [
+        "mozart",
+        "beethoven"
+      ],
+      "6": [
+        "chopin",
+        "mozart"
+      ],
+      "7": [
+        "beethoven",
+        "mozart"
+      ],
+      "8": [
+        "bach",
+        "mozart"
+      ],
+      "9": [
+        "bach",
+        "mozart"
+      ],
+      "10": [
+        "mozart",
+        "chopin"
+      ],
+      "11": [
+        "mozart",
+        "beethoven"
+      ],
+      "12": [
+        "beethoven",
+        "mozart"
+      ],
+      "13": [
+        "mozart",
+        "beethoven"
+      ],
+      "14": [
+        "chopin",
+        "mozart"
+      ],
+      "15": [
+        "mozart",
+        "chopin"
+      ],
+      "16": [
+        "bach",
+        "mozart"
+      ],
+      "17": [
+        "bach",
+        "mozart"
+      ]
+    },
+    "original_trial_structure": {
+      "task1": {
+        "groups": [
+          1,
+          2,
+          3
+        ],
+        "samples_per_group": 2
+      },
+      "task2": {
+        "groups": [
+          1,
+          2,
+          3
+        ],
+        "samples_per_group": 2
+      },
+      "task3": {
+        "groups": [
+          1,
+          2,
+          3
+        ],
+        "samples_per_group": 2
+      }
+    },
+    "shuffled_trial_mapping": {
+      "0": {
+        "trial_id": "task1_group1_original",
+        "original_position": 0
+      },
+      "1": {
+        "trial_id": "task1_group2_original",
+        "original_position": 1
+      },
+      "2": {
+        "trial_id": "task1_group3_original",
+        "original_position": 2
+      },
+      "3": {
+        "trial_id": "task1_group3_sample1",
+        "original_position": 3
+      },
+      "4": {
+        "trial_id": "task1_group1_sample1",
+        "original_position": 4
+      },
+      "5": {
+        "trial_id": "task1_group2_sample1",
+        "original_position": 5
+      },
+      "6": {
+        "trial_id": "task2_group3_sample1",
+        "original_position": 6
+      },
+      "7": {
+        "trial_id": "task2_group2_sample1",
+        "original_position": 7
+      },
+      "8": {
+        "trial_id": "task2_group1_sample1",
+        "original_position": 8
+      },
+      "9": {
+        "trial_id": "task2_group1_original",
+        "original_position": 9
+      },
+      "10": {
+        "trial_id": "task2_group3_original",
+        "original_position": 10
+      },
+      "11": {
+        "trial_id": "task2_group2_original",
+        "original_position": 11
+      },
+      "12": {
+        "trial_id": "task3_group2_original",
+        "original_position": 12
+      },
+      "13": {
+        "trial_id": "task3_group2_sample1",
+        "original_position": 13
+      },
+      "14": {
+        "trial_id": "task3_group3_sample1",
+        "original_position": 14
+      },
+      "15": {
+        "trial_id": "task3_group3_original",
+        "original_position": 15
+      },
+      "16": {
+        "trial_id": "task3_group1_sample1",
+        "original_position": 16
+      },
+      "17": {
+        "trial_id": "task3_group1_original",
+        "original_position": 17
+      }
+    }
+  },
+  "survey_data": {
+    "task1_group1_original": {
+      "trial_info": {
+        "id": "task1_group1_original",
+        "task": "task1",
+        "group": 1,
+        "sample_type": "original",
+        "audio_path": "data/Exp1/Bach/exp1_bach_0.mp3"
+      },
+      "randomized_position": 0,
+      "style_ratings": {
+        "bach": 3,
+        "beethoven": null,
+        "chopin": null,
+        "mozart": 3
+      },
+      "quality_ratings": {
+        "overall_quality": 5,
+        "coherence": 5
+      }
+    },
+    "task1_group2_original": {
+      "trial_info": {
+        "id": "task1_group2_original",
+        "task": "task1",
+        "group": 2,
+        "sample_type": "original",
+        "audio_path": "data/Exp1/Beethoven/exp1-Beethoven-2025-09-04_17-39-22-0.mp3"
+      },
+      "randomized_position": 1,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": 2,
+        "chopin": null,
+        "mozart": 4
+      },
+      "quality_ratings": {
+        "overall_quality": 5,
+        "coherence": 5
+      }
+    },
+    "task1_group3_original": {
+      "trial_info": {
+        "id": "task1_group3_original",
+        "task": "task1",
+        "group": 3,
+        "sample_type": "original",
+        "audio_path": "data/Exp1/Chopin/exp1-Chopin-2025-09-04_17-20-46-0.mp3"
+      },
+      "randomized_position": 2,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": null,
+        "chopin": 3,
+        "mozart": 2
+      },
+      "quality_ratings": {
+        "overall_quality": 4,
+        "coherence": 4
+      }
+    },
+    "task1_group3_sample1": {
+      "trial_info": {
+        "id": "task1_group3_sample1",
+        "task": "task1",
+        "group": 3,
+        "sample_type": "sample",
+        "sample_num": 1,
+        "audio_path": "data/Exp1/Chopin/exp1-Chopin-2025-09-04_12-19-54-0.5.mp3"
+      },
+      "randomized_position": 3,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": null,
+        "chopin": 3,
+        "mozart": 2
+      },
+      "quality_ratings": {
+        "overall_quality": 3,
+        "coherence": 3
+      }
+    },
+    "task1_group1_sample1": {
+      "trial_info": {
+        "id": "task1_group1_sample1",
+        "task": "task1",
+        "group": 1,
+        "sample_type": "sample",
+        "sample_num": 1,
+        "audio_path": "data/Exp1/Bach/exp1_bach_0.5Mozart.mp3"
+      },
+      "randomized_position": 4,
+      "style_ratings": {
+        "bach": 2,
+        "beethoven": null,
+        "chopin": null,
+        "mozart": 5
+      },
+      "quality_ratings": {
+        "overall_quality": 5,
+        "coherence": 5
+      }
+    },
+    "task1_group2_sample1": {
+      "trial_info": {
+        "id": "task1_group2_sample1",
+        "task": "task1",
+        "group": 2,
+        "sample_type": "sample",
+        "sample_num": 1,
+        "audio_path": "data/Exp1/Beethoven/exp1-Beethoven-0.5Mozart-2025-09-04_11-58-17.mp3"
+      },
+      "randomized_position": 5,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": 2,
+        "chopin": null,
+        "mozart": 4
+      },
+      "quality_ratings": {
+        "overall_quality": 5,
+        "coherence": 5
+      }
+    },
+    "task2_group3_sample1": {
+      "trial_info": {
+        "id": "task2_group3_sample1",
+        "task": "task2",
+        "group": 3,
+        "sample_type": "sample",
+        "sample_num": 1,
+        "audio_path": "data/Exp2/Chopin/exp2-Chopin-0.5Mozart1.0-2025-09-04_14-37-23.mp3"
+      },
+      "randomized_position": 6,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": null,
+        "chopin": 3,
+        "mozart": 3
+      },
+      "quality_ratings": {
+        "overall_quality": 5,
+        "coherence": 5
+      }
+    },
+    "task2_group2_sample1": {
+      "trial_info": {
+        "id": "task2_group2_sample1",
+        "task": "task2",
+        "group": 2,
+        "sample_type": "sample",
+        "sample_num": 1,
+        "audio_path": "data/Exp2/Beethoven/exp2-Beethoven-0.8Mozart0.8-2025-09-04_14-43-45-Beethoven - 2025:9:8, 15.44.mp3"
+      },
+      "randomized_position": 7,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": 3,
+        "chopin": null,
+        "mozart": 2
+      },
+      "quality_ratings": {
+        "overall_quality": 5,
+        "coherence": 5
+      }
+    },
+    "task2_group1_sample1": {
+      "trial_info": {
+        "id": "task2_group1_sample1",
+        "task": "task2",
+        "group": 1,
+        "sample_type": "sample",
+        "sample_num": 1,
+        "audio_path": "data/Exp2/Bach/exp2-Bach-0.5+Mozart1.0-0.8-2025-09-04_14-08-32-short- 2025:9:8, 15.14.mp3"
+      },
+      "randomized_position": 8,
+      "style_ratings": {
+        "bach": 4,
+        "beethoven": null,
+        "chopin": null,
+        "mozart": 4
+      },
+      "quality_ratings": {
+        "overall_quality": 4,
+        "coherence": 4
+      }
+    },
+    "task2_group1_original": {
+      "trial_info": {
+        "id": "task2_group1_original",
+        "task": "task2",
+        "group": 1,
+        "sample_type": "original",
+        "audio_path": "data/Exp2/Bach/exp2-Bach_0_hort - 2025:9:8, 14.33.mp3"
+      },
+      "randomized_position": 9,
+      "style_ratings": {
+        "bach": 4,
+        "beethoven": null,
+        "chopin": null,
+        "mozart": 2
+      },
+      "quality_ratings": {
+        "overall_quality": 4,
+        "coherence": 4
+      }
+    },
+    "task2_group3_original": {
+      "trial_info": {
+        "id": "task2_group3_original",
+        "task": "task2",
+        "group": 3,
+        "sample_type": "original",
+        "audio_path": "data/Exp2/Chopin/exp2-chopin-original.mp3"
+      },
+      "randomized_position": 10,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": null,
+        "chopin": 3,
+        "mozart": 3
+      },
+      "quality_ratings": {
+        "overall_quality": 4,
+        "coherence": 4
+      }
+    },
+    "task2_group2_original": {
+      "trial_info": {
+        "id": "task2_group2_original",
+        "task": "task2",
+        "group": 2,
+        "sample_type": "original",
+        "audio_path": "data/Exp2/Beethoven/exp2-origin-Beethoven.mp3"
+      },
+      "randomized_position": 11,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": 4,
+        "chopin": null,
+        "mozart": 2
+      },
+      "quality_ratings": {
+        "overall_quality": 4,
+        "coherence": 4
+      }
+    },
+    "task3_group2_original": {
+      "trial_info": {
+        "id": "task3_group2_original",
+        "task": "task3",
+        "group": 2,
+        "sample_type": "original",
+        "audio_path": "data/Exp3/Beethoven/exp3-Beethoven-2025-09-04_17-29-44-0.mp3"
+      },
+      "randomized_position": 12,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": 2,
+        "chopin": null,
+        "mozart": 4
+      },
+      "quality_ratings": {
+        "overall_quality": 5,
+        "coherence": 5
+      },
+      "fusion_ratings": {
+        "integration": 5,
+        "balance": 5
+      }
+    },
+    "task3_group2_sample1": {
+      "trial_info": {
+        "id": "task3_group2_sample1",
+        "task": "task3",
+        "group": 2,
+        "sample_type": "sample",
+        "sample_num": 1,
+        "audio_path": "data/Exp3/Beethoven/exp3-Beethoven  0.3Mozart0.7 - 2025:9:9, 10.21.mp3"
+      },
+      "randomized_position": 13,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": 2,
+        "chopin": null,
+        "mozart": 4
+      },
+      "quality_ratings": {
+        "overall_quality": 5,
+        "coherence": 5
+      },
+      "fusion_ratings": {
+        "integration": 4,
+        "balance": 4
+      }
+    },
+    "task3_group3_sample1": {
+      "trial_info": {
+        "id": "task3_group3_sample1",
+        "task": "task3",
+        "group": 3,
+        "sample_type": "sample",
+        "sample_num": 1,
+        "audio_path": "data/Exp3/Chopin/exp3-Chopin0.3 Mozart0.7- 2025:9:9, 10.25.mp3"
+      },
+      "randomized_position": 14,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": null,
+        "chopin": 3,
+        "mozart": 4
+      },
+      "quality_ratings": {
+        "overall_quality": 5,
+        "coherence": 5
+      },
+      "fusion_ratings": {
+        "integration": 5,
+        "balance": 5
+      }
+    },
+    "task3_group3_original": {
+      "trial_info": {
+        "id": "task3_group3_original",
+        "task": "task3",
+        "group": 3,
+        "sample_type": "original",
+        "audio_path": "data/Exp3/Chopin/exp3-chopin-2025-09-04_14-24-18.mp3"
+      },
+      "randomized_position": 15,
+      "style_ratings": {
+        "bach": null,
+        "beethoven": null,
+        "chopin": 4,
+        "mozart": 2
+      },
+      "quality_ratings": {
+        "overall_quality": 4,
+        "coherence": 4
+      },
+      "fusion_ratings": {
+        "integration": 4,
+        "balance": 3
+      }
+    },
+    "task3_group1_sample1": {
+      "trial_info": {
+        "id": "task3_group1_sample1",
+        "task": "task3",
+        "group": 1,
+        "sample_type": "sample",
+        "sample_num": 1,
+        "audio_path": "data/Exp3/Bach/exp3-Bach0.1Mozart0.9-2 - 2025:9:9, 10.33.mp3"
+      },
+      "randomized_position": 16,
+      "style_ratings": {
+        "bach": 2,
+        "beethoven": null,
+        "chopin": null,
+        "mozart": 4
+      },
+      "quality_ratings": {
+        "overall_quality": 3,
+        "coherence": 3
+      },
+      "fusion_ratings": {
+        "integration": 3,
+        "balance": 3
+      }
+    },
+    "task3_group1_original": {
+      "trial_info": {
+        "id": "task3_group1_original",
+        "task": "task3",
+        "group": 1,
+        "sample_type": "original",
+        "audio_path": "data/Exp3/Bach/exp3-Bach-2025-09-04_14-08-32-0.mp3"
+      },
+      "randomized_position": 17,
+      "style_ratings": {
+        "bach": 2,
+        "beethoven": null,
+        "chopin": null,
+        "mozart": 4
+      },
+      "quality_ratings": {
+        "overall_quality": 4,
+        "coherence": 3
+      },
+      "fusion_ratings": {
+        "integration": 2,
+        "balance": 2
+      }
+    }
+  },
+  "completion_timestamp": "2025-09-11T20:08:57.471410"
+}

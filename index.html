@@ -12,15 +12,12 @@
 <header class="site-header">
   <div class="container">
     <h1>Composer Vector: Style-Steering Symbolic Music</h1>
-    <p class="authors">Xunyi Jiang · Collaborators</p>
     <div class="badges">
-      <a class="btn" href="paper.pdf">📄 Paper (PDF)</a>
       <a class="btn" href="https://github.com/yourname/composer-vector">💻 Code</a>
       <a class="btn" href="#audio">🎧 Audio Samples</a>
       <a class="btn" href="#results">📊 Results</a>
       <a class="btn" href="#bibtex">🔖 BibTeX</a>
     </div>
-    <img class="teaser" src="assets/img/teaser.png" alt="teaser">
   </div>
 </header>
 
@@ -36,7 +33,7 @@
     </div>
   </section>
 
-  <section id="method" class="section alt">
+  <!-- <section id="method" class="section alt">
     <div class="container two-col">
       <div>
         <h2>Method</h2>
@@ -48,49 +45,109 @@
         <p>We also support multi‑style fusion (e.g., <code>0.5·Bach + 0.5·Beethoven</code>) and contrastive elimination.</p>
       </div>
       <div class="img-wrap">
-        <img src="assets/img/method.png" alt="method diagram">
+        <img src="assets/img/method.png" alt="method diagram" style="width: 100%; height: 600px; object-fit: contain;">
       </div>
+    </div>
+  </section> -->
+  <section id="method" class="section alt">
+    <div class="container">
+      <h2>Method</h2>
+      <img src="assets/img/method.png" alt="method diagram" style="width: 100%; height: 600px; object-fit: contain;">
     </div>
   </section>
 
   <section id="audio" class="section">
     <div class="container">
       <h2>Audio / Symbolic Examples</h2>
-      <p>Replace the WAVs below with your ABC→MIDI→audio renders. Include originals and steered/mixed outputs.</p>
+      <p>Listen to examples of original compositions and their style-steered versions using our Composer Vector method.</p>
 
+      <h3>Experiment 1</h3>
       <div class="card-grid">
         <div class="card">
-          <h3>Bach — Original</h3>
-          <audio controls src="assets/samples/bach_original.wav"></audio>
+          <h4>Bach — Original</h4>
+          <audio controls src="assets/samples/data/Exp1/Bach/exp1_bach_0.mp3"></audio>
         </div>
         <div class="card">
-          <h3>Bach — Steered to Bach</h3>
-          <audio controls src="assets/samples/bach_steered.wav"></audio>
+          <h4>Bach — Steered to Mozart (0.5)</h4>
+          <audio controls src="assets/samples/data/Exp1/Bach/exp1_bach_0.5Mozart.mp3"></audio>
         </div>
         <div class="card">
-          <h3>Bach/Beethoven — 50/50 Mix</h3>
-          <audio controls src="assets/samples/bach_mix.wav"></audio>
+          <h4>Beethoven — Original</h4>
+          <audio controls src="assets/samples/data/Exp1/Beethoven/exp1-Beethoven-2025-09-04_17-39-22-0.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Beethoven — Steered to Mozart (0.5)</h4>
+          <audio controls src="assets/samples/data/Exp1/Beethoven/exp1-Beethoven-0.5Mozart-2025-09-04_11-58-17.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Chopin — Original</h4>
+          <audio controls src="assets/samples/data/Exp1/Chopin/exp1-Chopin-2025-09-04_17-20-46-0.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Chopin — Steered to Mozart (0.5)</h4>
+          <audio controls src="assets/samples/data/Exp1/Chopin/exp1-Chopin-2025-09-04_12-19-54-0.5.mp3"></audio>
         </div>
       </div>
 
+      <h3>Experiment 2</h3>
       <div class="card-grid">
         <div class="card">
-          <h3>Chopin — Original</h3>
-          <audio controls src="assets/samples/chopin_original.wav"></audio>
+          <h4>Bach — Original</h4>
+          <audio controls src="assets/samples/data/Exp2/Bach/exp2-Bach_0_hort - 2025:9:8, 14.33.mp3"></audio>
         </div>
         <div class="card">
-          <h3>Chopin — Steered to Chopin</h3>
-          <audio controls src="assets/samples/chopin_steered.wav"></audio>
+          <h4>Bach — Mixed with Mozart</h4>
+          <audio controls src="assets/samples/data/Exp2/Bach/exp2-Bach-0.5+Mozart1.0-0.8-2025-09-04_14-08-32-short- 2025:9:8, 15.14.mp3"></audio>
         </div>
         <div class="card">
-          <h3>Chopin/Mozart — 30/70 Mix</h3>
-          <audio controls src="assets/samples/chopin_mix.wav"></audio>
+          <h4>Beethoven — Original</h4>
+          <audio controls src="assets/samples/data/Exp2/Beethoven/exp2-origin-Beethoven.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Beethoven — Mixed with Mozart (0.8)</h4>
+          <audio controls src="assets/samples/data/Exp2/Beethoven/exp2-Beethoven-0.8Mozart0.8-2025-09-04_14-43-45-Beethoven - 2025:9:8, 15.44.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Chopin — Original</h4>
+          <audio controls src="assets/samples/data/Exp2/Chopin/exp2-chopin-original.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Chopin — Mixed with Mozart (0.5)</h4>
+          <audio controls src="assets/samples/data/Exp2/Chopin/exp2-Chopin-0.5Mozart1.0-2025-09-04_14-37-23.mp3"></audio>
+        </div>
+      </div>
+
+      <h3>Experiment 3</h3>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Bach — Original</h4>
+          <audio controls src="assets/samples/data/Exp3/Bach/exp3-Bach-2025-09-04_14-08-32-0.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Bach — Mixed with Mozart (0.1/0.9)</h4>
+          <audio controls src="assets/samples/data/Exp3/Bach/exp3-Bach0.1Mozart0.9-2 - 2025:9:9, 10.33.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Beethoven — Original</h4>
+          <audio controls src="assets/samples/data/Exp3/Beethoven/exp3-Beethoven-2025-09-04_17-29-44-0.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Beethoven — Mixed with Mozart (0.3/0.7)</h4>
+          <audio controls src="assets/samples/data/Exp3/Beethoven/exp3-Beethoven  0.3Mozart0.7 - 2025:9:9, 10.21.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Chopin — Original</h4>
+          <audio controls src="assets/samples/data/Exp3/Chopin/exp3-chopin-2025-09-04_14-24-18.mp3"></audio>
+        </div>
+        <div class="card">
+          <h4>Chopin — Mixed with Mozart (0.3/0.7)</h4>
+          <audio controls src="assets/samples/data/Exp3/Chopin/exp3-Chopin0.3 Mozart0.7- 2025:9:9, 10.25.mp3"></audio>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="results" class="section alt">
+  <!-- <section id="results" class="section alt">
     <div class="container">
       <h2>Results</h2>
       <p>Summaries of objective metrics (symbolic/music‑specific) and subjective human studies.</p>
@@ -118,7 +175,8 @@
       </div>
       <p class="note">Tip: include a confusion matrix and MOS/2AFC plots in the paper and link here.</p>
     </div>
-  </section>
+  </section> -->
+
 
   <section id="bibtex" class="section">
     <div class="container">
