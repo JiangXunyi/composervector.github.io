@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Composer Vector: Style-Steering Symbolic Music</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/img/teaser.png">
+  <meta name="description" content="Demo page for Composer Vector: training-free style steering for symbolic music generation (ABC/MIDI).">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1>Composer Vector: Style-Steering Symbolic Music</h1>
+    <p class="authors">Xunyi Jiang · Collaborators</p>
+    <div class="badges">
+      <a class="btn" href="paper.pdf">📄 Paper (PDF)</a>
+      <a class="btn" href="https://github.com/yourname/composer-vector">💻 Code</a>
+      <a class="btn" href="#audio">🎧 Audio Samples</a>
+      <a class="btn" href="#results">📊 Results</a>
+      <a class="btn" href="#bibtex">🔖 BibTeX</a>
+    </div>
+    <img class="teaser" src="assets/img/teaser.png" alt="teaser">
+  </div>
+</header>
+
+<main>
+  <section id="abstract" class="section">
+    <div class="container">
+      <h2>Abstract</h2>
+      <p>
+        We introduce <strong>Composer Vector</strong>, a training‑free, inference‑time steering method for controllable
+        <em>symbolic</em> music generation. By injecting a style vector into hidden states with a tunable coefficient,
+        we enable single‑style control, multi‑style blending, and continuous interpolation. Please see the paper for details.
+      </p>
+    </div>
+  </section>
+
+  <section id="method" class="section alt">
+    <div class="container two-col">
+      <div>
+        <h2>Method</h2>
+        <ol>
+          <li><b>Style localization</b>: identify a style‑bearing layer <code>l*</code> (e.g., via linear probe & clustering).</li>
+          <li><b>Vector</b>: build a composer vector (prototype or token‑embedding variant).</li>
+          <li><b>Injection</b>: add the vector to hidden states during decoding with coefficient <code>α</code> and norm rescaling.</li>
+        </ol>
+        <p>We also support multi‑style fusion (e.g., <code>0.5·Bach + 0.5·Beethoven</code>) and contrastive elimination.</p>
+      </div>
+      <div class="img-wrap">
+        <img src="assets/img/method.png" alt="method diagram">
+      </div>
+    </div>
+  </section>
+
+  <section id="audio" class="section">
+    <div class="container">
+      <h2>Audio / Symbolic Examples</h2>
+      <p>Replace the WAVs below with your ABC→MIDI→audio renders. Include originals and steered/mixed outputs.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Bach — Original</h3>
+          <audio controls src="assets/samples/bach_original.wav"></audio>
+        </div>
+        <div class="card">
+          <h3>Bach — Steered to Bach</h3>
+          <audio controls src="assets/samples/bach_steered.wav"></audio>
+        </div>
+        <div class="card">
+          <h3>Bach/Beethoven — 50/50 Mix</h3>
+          <audio controls src="assets/samples/bach_mix.wav"></audio>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Chopin — Original</h3>
+          <audio controls src="assets/samples/chopin_original.wav"></audio>
+        </div>
+        <div class="card">
+          <h3>Chopin — Steered to Chopin</h3>
+          <audio controls src="assets/samples/chopin_steered.wav"></audio>
+        </div>
+        <div class="card">
+          <h3>Chopin/Mozart — 30/70 Mix</h3>
+          <audio controls src="assets/samples/chopin_mix.wav"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" class="section alt">
+    <div class="container">
+      <h2>Results</h2>
+      <p>Summaries of objective metrics (symbolic/music‑specific) and subjective human studies.</p>
+      <div class="scroll-x">
+        <table class="metrics">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Format OK ↑</th>
+              <th>Key Δ (cents) ↓</th>
+              <th>Chord Overlap ↑</th>
+              <th>Rhythm Syncopation ↓</th>
+              <th>Style Classifier Acc. ↑</th>
+              <th>Human “Sounds like target” ↑</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>NeutralText (no steering)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>TextComp (composer in prompt)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>SteerNeutral (vector only)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>SteerText (text + vector)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>MixVector (0.5 Bach + 0.5 Beethoven)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Tip: include a confusion matrix and MOS/2AFC plots in the paper and link here.</p>
+    </div>
+  </section>
+
+  <section id="bibtex" class="section">
+    <div class="container">
+      <h2>BibTeX</h2>
+<pre class="bibtex">
+@inproceedings{jiang2025composervector,
+  title={Composer Vector: Style-Steering Symbolic Music Generation in a Latent Space},
+  author={Jiang, Xunyi and Others},
+  booktitle={NeurIPS 2025 Workshop on AI4Music},
+  year={2025}
+}
+</pre>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2025 Composer Vector</span>
+    <span>·</span>
+    <a href="mailto:your.email@domain">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

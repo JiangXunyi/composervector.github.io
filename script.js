@@ -1,0 +1,1 @@
+// Minimal JS hook if you later want interactivity (filters, lightbox, etc.)
